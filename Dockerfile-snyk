@@ -1,0 +1,26 @@
+FROM node:18-alpine
+
+# Sao chép mã nguồn vào thư mục làm việc
+WORKDIR /app
+COPY . .
+
+# Cài đặt Snyk và snyk-to-html
+RUN npm install -g snyk snyk-to-html
+
+# Cài đặt các dependencies cho dự án từ package.json
+RUN npm install
+
+# Thiết lập và xác thực Snyk với API token
+ARG SNYK_AUTH_TOKEN
+RUN snyk auth $SNYK_AUTH_TOKEN
+
+# Thiết lập tên file đầu ra cho báo cáo Snyk
+ARG OUTPUT_FILENAME
+ENV OUTPUT_FILENAME=$OUTPUT_FILENAME
+
+# Chạy kiểm tra Snyk và tạo file HTML báo cáo
+RUN snyk test --json | snyk-to-html -o /app/${OUTPUT_FILENAME}.html || true
+
+# Kiểm tra file đầu ra để đảm bảo file HTML đã được tạo
+RUN echo "Listing files in /app:" && ls /app && echo "Checking existence of /app/${OUTPUT_FILENAME}.html" && ls /app/${OUTPUT_FILENAME}.html
+

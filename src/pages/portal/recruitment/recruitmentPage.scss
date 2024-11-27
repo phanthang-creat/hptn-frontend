@@ -1,0 +1,80 @@
+.portal-recruitment-page {
+  // Button
+  .ant-btn {
+    &.ant-btn-default {
+      &:hover {
+        color: #b45f06 !important;
+        border-color: #b45f06 !important;
+      }
+    }
+
+    &.ant-btn-primary {
+      background-color: #b45f06 !important;
+
+      &:hover {
+        background-color: #c3721d !important;
+      }
+    }
+  }
+
+  //   Input
+  .ant-input-affix-wrapper {
+    padding: 0px 16px;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &-focused {
+      border-color: #b45f06;
+    }
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 2px rgba(180, 95, 6, 0.1);
+    }
+  }
+
+  .ant-input {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  //   Select
+  .ant-select {
+    .ant-select-selector {
+      padding: 0 16px !important;
+
+      &:focus,
+      &:hover,
+      &:active {
+        border-color: #b45f06 !important;
+      }
+
+      &:focus,
+      &:focus-within {
+        box-shadow: 0 0 0 2px rgba(180, 95, 6, 0.1) !important;
+      }
+
+      .ant-select-selection-search {
+        inset-inline-start: 16px !important;
+        inset-inline-end: 16px !important;
+      }
+    }
+
+    &-focused {
+      .ant-select-selector {
+        border-color: #b45f06 !important;
+      }
+    }
+  }
+
+  .ant-pagination {
+    .ant-pagination-item-active {
+      border-color: #b45f06;
+
+      a {
+        color: #b45f06;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.portal-post-category-page {
+  .ant-btn {
+    &.ant-btn-default {
+      &:hover {
+        color: #b45f06 !important;
+        border-color: #b45f06 !important;
+      }
+    }
+
+    &.ant-btn-primary {
+      background-color: #b45f06 !important;
+
+      &:hover {
+        background-color: #c3721d !important;
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    padding: 0px 16px;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &-focused {
+      border-color: #b45f06;
+    }
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 2px rgba(180, 95, 6, 0.1);
+    }
+  }
+
+  .ant-picker {
+    &-focused,
+    &:focus,
+    &:hover,
+    &:active {
+      border-color: #b45f06;
+    }
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 2px rgba(180, 95, 6, 0.1);
+    }
+
+    .ant-picker-active-bar {
+      background: #b45f06;
+    }
+  }
+
+  .ant-input {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .ant-pagination {
+    .ant-pagination-item-active {
+      border-color: #b45f06;
+
+      a {
+        color: #b45f06;
+      }
+    }
+  }
+}

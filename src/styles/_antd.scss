@@ -1,0 +1,67 @@
+// Button
+.ant-btn {
+  border-radius: 4px;
+  height: 38px;
+  padding: 4px 16px;
+
+  &.ant-btn-primary {
+    background-color: #1677ff;
+  }
+
+  &.ant-btn-icon-only {
+    width: 38px;
+  }
+}
+
+// Menu
+.ant-menu {
+  .ant-menu-item,
+  .ant-menu-submenu,
+  .ant-menu-submenu-title {
+    border-radius: 4px;
+  }
+}
+
+// Input
+.ant-input,
+.ant-input-number-input {
+  padding: 7px 16px !important;
+  text-overflow: ellipsis;
+}
+
+.ant-form-item-explain-error {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 4px 0 8px;
+}
+
+// Select
+.ant-select {
+  height: 38px;
+}
+
+// Picker
+.ant-picker {
+  padding: 7px 16px;
+}
+
+// Modal
+.ant-modal {
+  .ant-modal-header {
+    margin-right: 16px;
+  }
+}
+
+// Message
+.ant-notification {
+  z-index: 99999 !important;
+}
+
+.ant-notification-notice-message {
+  margin-bottom: 0px !important;
+}
+
+// Switch
+.ant-switch {
+  background-color: rgba(0, 0, 0, 0.25);
+}

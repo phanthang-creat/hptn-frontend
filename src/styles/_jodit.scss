@@ -1,0 +1,55 @@
+@import './mixin';
+
+.jodit-container {
+  overflow: hidden;
+
+  a {
+    display: inline-block !important;
+  }
+
+  ul {
+    list-style: disc outside;
+    padding: 0 0 0 32px !important;
+  }
+
+  ol {
+    list-style: decimal outside;
+    padding: 0 0 0 32px !important;
+  }
+
+  .jodit-wysiwyg {
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    table {
+      img {
+        max-width: 100% !important;
+        height: auto !important;
+
+        @include md {
+          max-width: unset !important;
+        }
+      }
+    }
+  }
+
+  &.c-jodit-container {
+    min-height: unset !important;
+    height: auto !important;
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    line-height: 1.5;
+
+    .jodit-wysiwyg {
+      padding: 0 !important;
+      overflow-x: visible !important;
+
+      iframe {
+        max-width: 100% !important;
+      }
+    }
+  }
+}

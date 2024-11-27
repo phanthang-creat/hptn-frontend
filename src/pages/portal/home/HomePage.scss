@@ -1,0 +1,37 @@
+@import '../../../styles/mixin';
+
+.portal-home-page {
+  .swiper-slide {
+    height: auto;
+  }
+
+  .jodit-container {
+    img {
+      width: 100%;
+
+      @include sm {
+        width: revert-layer;
+      }
+    }
+  }
+
+  iframe {
+    @apply h-[620px] min-[680px]:h-[500px] min-[1016px]:h-[620px] min-[1156px]:h-[500px];
+  }
+
+  .greatest-games-table {
+    .ant-table-thead {
+      th {
+        @apply bg-[#F1F1F1];
+      }
+    }
+
+    .ant-table-row {
+      @apply cursor-pointer;
+
+      &:nth-child(odd) {
+        @apply bg-[#F1F1F1];
+      }
+    }
+  }
+}

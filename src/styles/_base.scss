@@ -1,0 +1,29 @@
+* {
+  @apply m-0 p-0 box-border font-inter;
+}
+
+@layer base {
+  // SCROLLBAR CSS
+  html *::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  html *::-webkit-scrollbar-thumb {
+    @apply bg-[#c0c0c0] rounded;
+  }
+
+  html *::-webkit-scrollbar-track {
+    @apply bg-[#f1f1f1];
+  }
+
+  body {
+    @apply text-sm font-normal text-primary font-inter;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+  }
+
+  img {
+    @apply select-none;
+    -webkit-user-drag: none;
+  }
+}

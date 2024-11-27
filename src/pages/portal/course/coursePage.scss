@@ -1,0 +1,26 @@
+.portal-course-page {
+  .ant-tabs {
+    .ant-tabs-tab {
+      &:hover {
+        color: #b45f06;
+      }
+
+      .ant-tabs-tab-btn {
+        &:focus {
+          color: #b45f06;
+        }
+      }
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          width: max-content;
+          color: #b45f06;
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background: #b45f06;
+    }
+  }
+}
